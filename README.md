@@ -1,14 +1,16 @@
 # strapi-ecommerce
 
 ## Technologies
-[NextJS 11.1.0](https://nextjs.org/).
+[NextJS 11.1.0](https://nextjs.org/)
 
-[Strapi 3.6.7](https://strapi.io/).
+[Strapi 3.6.7](https://strapi.io/)
+
 [Magic](https://magic.link/).
 
 
 ## How to create this website
 Create folder strapi-ecommerce
+
 Backend
 ```
 $ npx create-strapi-app ecommerce-backend --quickstart
