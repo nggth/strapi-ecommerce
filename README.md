@@ -1,14 +1,14 @@
 # strapi-ecommerce
 
-## Technologies
+### Technologies
 [NextJS 11.1.0](https://nextjs.org/)
 
 [Strapi 3.6.7](https://strapi.io/)
 
-[Magic](https://magic.link/).
+[Magic](https://magic.link/)
 
 
-## How to create this website
+### How to create this website
 Create folder strapi-ecommerce
 
 Backend
@@ -25,7 +25,7 @@ $ npx create-next-app
 $ cd ecommerce-frontend/
 $ npm run dev
 ```
-## Setup if cloning from [Github](https://github.com/nggth/strapi-ecommerce)
+### Setup if cloning from [Github](https://github.com/nggth/strapi-ecommerce)
 ```
 git clone https://github.com/nggth/strapi-ecommerce
 ```
