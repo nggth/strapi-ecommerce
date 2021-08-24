@@ -24,6 +24,8 @@ Frontend
 $ npx create-next-app
 $ cd ecommerce-frontend/
 $ npm run dev
+
+$ npm i magic-sdk
 ```
 ### Setup if cloning from [Github](https://github.com/nggth/strapi-ecommerce)
 ```
