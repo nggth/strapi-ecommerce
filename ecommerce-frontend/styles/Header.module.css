@@ -17,3 +17,6 @@
   top: 0;
   right: 0;
 }
+.auth img {
+  max-width: 25px;
+}

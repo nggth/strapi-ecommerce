@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useContext, useState } from 'react'
 import AuthContext from '../context/AuthContext'
+import styles from '../styles/Login.module.css'
 
 export default function Login() {
 
@@ -18,14 +19,28 @@ export default function Login() {
             </Head>
 
             <h2>Login</h2>
-            <form onSubmit={handleSubmit}>
+            <form className={styles.box} onSubmit={handleSubmit}>
+                <h1>Login</h1>
                 <input
                     type="email"
                     value={email}
                     onChange={(event) => setEmail(event.target.value)}
                     placeholder="Email address" />
-                <button type="submit">Login</button>
+                <input className={styles.button} type="submit" name="" value="Login" />
             </form>
+            {/* <form onSubmit={handleSubmit}>
+                <input
+                    className={styles.input}
+                    type="email"
+                    value={email}
+                    onChange={(event) => setEmail(event.target.value)}
+                    placeholder="Email address" />
+                <button
+                    className={styles.button}
+                    type="submit"
+                >
+                    Login</button>
+            </form> */}
         </div>
     )
 }
