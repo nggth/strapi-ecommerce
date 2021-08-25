@@ -15,6 +15,7 @@ Backend
 ```
 $ npx create-strapi-app ecommerce-backend --quickstart
 $ cd ecommerce-backend/
+$ npm i strapi-plugin-magic
 $ npm run build
 $ npm run develop
 ```
