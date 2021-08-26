@@ -49,3 +49,4 @@ $ cd strapi-ecommerce/ecommerce-frontend
 $ npm i
 $ npm run dev
 ```
+Change const before running website: STRIPE_SK, MAGIC_PUBLIC_KEY ...
