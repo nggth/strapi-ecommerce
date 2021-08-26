@@ -38,15 +38,23 @@ git clone https://github.com/nggth/strapi-ecommerce
 ```
 Backend
 ```
-$ cd strapi-ecommerce/ecommerce-backend
+$ cd ecommerce-backend
 $ npm i
 $ npm run build
 $ npm run develop
+Create products at http://localhost:1337/admin/
+
+Create Magic Link account to get the code into here http://localhost:1337/admin/plugins/magic
+
+Create file .env to store const STRIPE_SK
+
+Change both const STRIPE_PK and MAGIC_PUBLIC_KEY
+
 ```
 Frontend
 ```
-$ cd strapi-ecommerce/ecommerce-frontend
+$ cd ecommerce-frontend
 $ npm i
 $ npm run dev
 ```
-Change const before running website: STRIPE_SK, MAGIC_PUBLIC_KEY ...
+
