@@ -61,15 +61,49 @@ export default function Account() {
             <h2>Account page</h2>
 
             <h3>Your orders</h3>
-            {loading && 
-                <div className={styles.loading}><div></div><div></div><div></div><div></div></div>
-            }
-            {orders.map(order => (
+
+
+            <div>
+                {loading && 
+                    <div className={styles.loading}><div></div><div></div><div></div><div></div></div>
+                }
+                <table>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>Name</td>
+                            <td>Total</td>
+                            <td>Date</td>
+                            <td>Status</td>
+                        </tr>
+                    </thead>
+
+                    
+                    <tbody>
+                    {
+                        orders.map((order, index) => (
+                            <tr key={order.id}>
+                                <td>{index + 1}</td>
+                                <td>{order.product.name}</td>
+                                <td>{order.total}</td>
+                                <td>
+                                    {new Date(order.created_at).toLocaleDateString('en-EN')}
+                                </td>
+                                <td>{order.status}</td>
+                            </tr>
+                        ))
+                    }
+                    </tbody>
+                </table>
+            </div>
+            
+
+            {/* {orders.map(order => (
                 <div key={order.id}>
                     {new Date(order.created_at).toLocaleDateString('en-EN')}
                     {order.product.name} ${order.total} {order.status}
                 </div>
-            ))}
+            ))} */}
 
             <p>Looged in as: {user.email }</p>
             <a href="#" onClick={logoutUser}>Logout</a>
